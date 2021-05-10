@@ -1,0 +1,6 @@
+heroku.txt
+script.txt
+node_modules
+/config/database.yml
+/config/master.key
+

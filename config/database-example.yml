@@ -1,0 +1,26 @@
+default: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  username: postgres
+
+
+
+development:
+  <<: *default
+  database: glassdoorScraper
+  username: postgres
+
+
+
+test:
+  <<: *default
+  database: glassdoorScraperTest
+  username: postgres
+
+
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
+  username: postgres

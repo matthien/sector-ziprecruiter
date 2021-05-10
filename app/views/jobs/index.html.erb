@@ -1,0 +1,6 @@
+<h1>Jobs from ZipRecruiter</h1>
+
+<% @jobs.each do |job| %>
+<h3><%= job.job_title %></h3>
+    <p><%= job.location %></p>
+<% end %>
